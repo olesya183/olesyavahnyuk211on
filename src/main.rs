@@ -1,6 +1,9 @@
-#[cfg(test)]
 mod hackerrank;
 
 fn main() {
-    println!("We learn Rust!");
+    let result = hackerrank::task02::staircase(4);
+
+    for line in result {
+        println!("{}", line);
+    }
 }
