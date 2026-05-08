@@ -1,11 +1,21 @@
 pub fn staircase(n: i32) -> Vec<String> {
     let mut result = Vec::new();
 
-    for i in 1..=n {
-        let spaces = (n - i) as usize;
-        let hashes = i as usize;
 
-        let line = " ".repeat(spaces) + &"#".repeat(hashes);
+    for i in 1..=n {
+        let mut line = String::new();
+
+
+        for j in 1..=n {
+
+
+            if j <= n - i {
+                line.push(' ');
+            } else {
+                line.push('#');
+            }
+        }
+
         result.push(line);
     }
 
