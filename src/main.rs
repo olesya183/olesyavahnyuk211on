@@ -1,9 +1,14 @@
 mod hackerrank;
 
-fn main() {
-    let result = hackerrank::task02::staircase(4);
+use hackerrank::task03::grading_students;
 
-    for line in result {
-        println!("{}", line);
+fn main() {
+
+    let grades = vec![73, 67, 38, 33];
+
+    let result = grading_students(grades);
+
+    for grade in result {
+        println!("{}", grade);
     }
 }

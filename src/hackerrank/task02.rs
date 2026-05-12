@@ -4,11 +4,7 @@ pub fn staircase(n: i32) -> Vec<String> {
 
     for i in 1..=n {
         let mut line = String::new();
-
-
         for j in 1..=n {
-
-
             if j <= n - i {
                 line.push(' ');
             } else {
