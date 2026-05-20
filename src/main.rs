@@ -1,9 +1,12 @@
 mod hackerrank;
 
+use hackerrank::task06::get_total_x;
+
 fn main() {
-    println!("Practice work 5");
+    let a = vec![2, 4];
+    let b = vec![16, 32, 96];
 
-    let result = hackerrank::task05::kangaroo(0, 3, 4, 2);
+    let result = get_total_x(a, b);
 
-    println!("{}", result);
+    println!("Result: {}", result);
 }
