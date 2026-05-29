@@ -1,14 +1,12 @@
 mod hackerrank;
 
-use hackerrank::task07::breaking_records;
+use hackerrank::task08::migratory_birds;
 
 fn main() {
-    let scores = vec![10, 5, 20, 20, 4, 5, 2, 25, 1];
+    let arr = vec![1, 4, 4, 4, 5, 3];
 
-    let result = breaking_records(scores);
+    let result = migratory_birds(&arr);
 
-    println!("Best record breaks: {}", result[0]);
-    println!("Worst record breaks: {}", result[1]);
+    println!("Result: {}", result);
 }
-
 
