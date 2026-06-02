@@ -1,3 +1,4 @@
+//https://www.hackerrank.com/challenges/diagonal-difference/problem
 pub fn diagonal_difference(arr: Vec<Vec<i32>>) -> i32 {
     let n = arr.len();
 
