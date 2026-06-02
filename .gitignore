@@ -1,3 +1,9 @@
 /Cargo.lock
 /.idea/
 /target/
+bin/
+obj/
+.vs/
+
+*.user
+*.suo
