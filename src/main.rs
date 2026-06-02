@@ -1,15 +1,18 @@
 mod hackerrank;
 
-use hackerrank::task10::diagonal_difference;
+use hackerrank::task11::page_count;
+use std::io;
 
 fn main() {
-    let arr = vec![
-        vec![1, 2, 3],
-        vec![4, 5, 6],
-        vec![9, 8, 9],
-    ];
+    let mut n_input = String::new();
+    io::stdin().read_line(&mut n_input).unwrap();
+    let n: i32 = n_input.trim().parse().unwrap();
 
-    let result = diagonal_difference(arr);
+    let mut p_input = String::new();
+    io::stdin().read_line(&mut p_input).unwrap();
+    let p: i32 = p_input.trim().parse().unwrap();
+
+    let result = page_count(n, p);
 
     println!("{}", result);
 }
