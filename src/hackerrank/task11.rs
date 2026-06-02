@@ -1,4 +1,5 @@
 //https://www.hackerrank.com/challenges/drawing-book
+
 pub fn page_count(n: i32, p: i32) -> i32 {
     let front = p / 2;
     let back = (n - p) / 2;
